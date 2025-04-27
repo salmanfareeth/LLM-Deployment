@@ -67,8 +67,8 @@ Official reference: https://deepseek.com/
 
 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/ollama-local-telegram-bot.git
-cd ollama-local-telegram-bot
+git clone https://github.com/salmanfareeth/LLM-Deployment.git
+cd LLM-Deployment
 ```
 
 2. Create a Virtual Environment (optional but Recommended)

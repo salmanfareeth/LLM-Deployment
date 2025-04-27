@@ -141,6 +141,32 @@ TELEGRAM_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
 
 ---
 
+## 🤖 Creating a Telegram Bot using BotFather
+
+1. Open the Telegram app and search for "BotFather".
+
+2. Start a chat with BotFather by clicking "Start".
+
+3. Type `/newbot` and send it.
+
+4. BotFather will ask for a name:
+   - This is your bot’s display name (e.g., "Ollama AI Bot").
+
+5. Then it will ask for a username:
+   - It must end with 'bot' (e.g., `ollama_deepseek_bot`).
+
+6. After completing, BotFather will send you a **Bot Token**:
+   - It looks like: `1234567890:ABCDEF1234GhIjKlmNoPQrstUvWxYZ`
+   - **Copy this token** — you will need it for your Python code.
+
+7. Done! 🚀 Your Telegram Bot is now created!
+
+## ⚡ Important:
+- Save your Bot Token securely — do not share it publicly.
+- To chat with your bot, just search for its username inside Telegram and start messaging.
+
+---
+
 ## 🤖 Running the Telegram Bot
 
 ```py
@@ -172,6 +198,16 @@ Everything happens locally on your machine, ensuring privacy and control! 🔒
 | telegram_bot.py | Telegram bot code to send/receive messages and interact with Flask API. |
 | requirements.txt | List of Python libraries needed. |
 | README.md | Project documentation and setup guide. |
+
+---
+
+## 🖼️ Demo Screenshot
+
+Here’s a live demo of the Telegram Bot working with Ollama on local PC:
+
+![Telegram Bot Chat Demo](path_to_your_screenshot.png)
+
+> Screenshot: Chatting with the locally deployed AI bot via Telegram.
 
 ---
 

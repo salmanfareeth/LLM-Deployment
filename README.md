@@ -86,7 +86,7 @@ source venv/bin/activate
 On Windows
 
 ```py
-venv\Scripts\activate    
+venv\scripts\activate    
 ```
 
 3. Install Dependencies
@@ -205,7 +205,7 @@ Everything happens locally on your machine, ensuring privacy and control! 🔒
 
 Here’s a live demo of the Telegram Bot working with Ollama on local PC:
 
-![Telegram Bot Chat Demo](path_to_your_screenshot.png)
+![Telegram Bot Chat Demo](https://github.com/salmanfareeth/LLM-Deployment/blob/main/images/demo_telegram.jpg)
 
 > Screenshot: Chatting with the locally deployed AI bot via Telegram.
 

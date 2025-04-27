@@ -28,7 +28,7 @@ Official site: https://ollama.com/
 
 - No cloud dependency — run AI models **completely offline** on your PC.
 - **More privacy** — your data stays local and secure.
-- **Flexibility** — easily switch between different models like DeepSeek, Llama 3, etc.
+- **Flexibility** — easily switch between different models like DeepSeek, Llama, Qwen, Gemma, phi3 etc.
 - **Speed** — faster response times compared to cloud APIs (no network latency).
 - **Freedom** — no API costs or rate limits when using your own hardware.
 
@@ -38,7 +38,7 @@ Ollama simplifies local LLM deployment for developers, researchers, and enthusia
 
 ## 🧠 Why DeepSeek R1?
 
-In this project, we are using the `deepseek-r1` model with Ollama.
+In this project, I have used the `deepseek-r1` model with Ollama.
 
 Here’s why:
 

@@ -31,7 +31,7 @@ git clone https://github.com/your-username/ollama-local-telegram-bot.git
 cd ollama-local-telegram-bot
 ```
 
-3. Create a Virtual Environment (optional but Recommended)
+2. Create a Virtual Environment (optional but Recommended)
 
 It is recommended to use a virtual environment to manage project dependencies separately.
    
@@ -49,7 +49,7 @@ On Windows
 venv\Scripts\activate    
 ```
 
-5. Install Dependencies
+3. Install Dependencies
    
 ```py
 pip install -r requirements.txt

@@ -116,15 +116,34 @@ python flask_server.py
 - This starts a Flask server at http://localhost:8000
 - It listens for POST requests with user input text and forwards it to Ollama.
 
-### 3. Start Ngrok
 
-Expose your local Flask server:
+### 3. 🌐 Setting up Ngrok for Public URL Access
 
-```py
-ngrok http 8000
-```
+1. **Install Ngrok**:
+   - Ngrok is used to expose your local server (Flask in this case) to the internet with a public URL.
+   - **Installation steps**:
+     - Visit [Ngrok's official website](https://ngrok.com/download) to download the correct version for your operating system.
+     - Extract the downloaded file and place it in a directory of your choice.
+     - Run the following command in your terminal to verify Ngrok installation:
 
-Copy the public URL provided by Ngrok (e.g., https://abcd1234.ngrok.io).
+       ```bash
+       ./ngrok --version
+       ```
+
+2. **Expose Local Server Using Ngrok**:
+   - Once Ngrok is installed, you can expose your Flask server to the web:
+     - Run the following command to start a secure tunnel to your local Flask app (on port 8000 in this example):
+
+       ```bash
+       ./ngrok http 8000
+       ```
+
+     - Ngrok will provide a public URL (like `https://abcd1234.ngrok.io`), which can be used to access your Flask API from anywhere, including for integration with your Telegram bot.
+
+   > **Important**: This Ngrok URL can be used temporarily and should be updated every time the tunnel is restarted (e.g., after system restart).
+
+
+
 
 ### 4. Configure Telegram Bot
 

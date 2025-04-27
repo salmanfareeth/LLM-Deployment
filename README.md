@@ -20,7 +20,6 @@ You can interact with the local LLM by simply messaging a Telegram Bot, which fo
 ├── flask_server.py        # Flask API to interact with Ollama
 ├── telegram_bot.py        # Telegram Bot to communicate with the Flask API
 ├── requirements.txt       # Python dependencies
-├── .gitignore             # Files/folders to ignore in Git
 └── README.md              # This documentation
 
 ---
@@ -37,16 +36,28 @@ You can interact with the local LLM by simply messaging a Telegram Bot, which fo
 ## 📦 Installation
 
 1. Clone the Repository
+   ```bash
    git clone https://github.com/your-username/ollama-local-telegram-bot.git
    cd ollama-local-telegram-bot
+   ```
 
-2. Create a Virtual Environment (Recommended)
+3. Create a Virtual Environment (Recommended)
+   
+   ```py
    python -m venv venv
+   ```
+   ```py
    source venv/bin/activate  # On Linux/Mac
+   ```
+   ```py
    venv\Scripts\activate     # On Windows
+   ```
 
-3. Install Dependencies
+5. Install Dependencies
+   
+   ```py
    pip install -r requirements.txt
+   ```
 
 ---
 
@@ -56,11 +67,15 @@ You can interact with the local LLM by simply messaging a Telegram Bot, which fo
 
 Make sure Ollama is installed and the Deepseek-R1 model is available locally:
 
+```py
    ollama run deepseek-r1
+```
 
 ### 2. Run Flask Server
 
+```py
    python flask_server.py
+```
 
 - This starts a Flask server at http://localhost:8000
 - It listens for POST requests with user input text and forwards it to Ollama.
@@ -69,7 +84,9 @@ Make sure Ollama is installed and the Deepseek-R1 model is available locally:
 
 Expose your local Flask server:
 
+```py
    ngrok http 8000
+```
 
 Copy the public URL provided by Ngrok (e.g., https://abcd1234.ngrok.io).
 
@@ -81,14 +98,18 @@ Copy the public URL provided by Ngrok (e.g., https://abcd1234.ngrok.io).
 
 Example:
 
+```bash
 FLASK_SERVER_URL = 'https://abcd1234.ngrok.io'
 TELEGRAM_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+```
 
 ---
 
 ## 🤖 Running the Telegram Bot
 
+```py
    python telegram_bot.py
+```
 
 The bot will now listen to incoming messages, forward them to your local AI model, and send back the responses!
 
@@ -146,7 +167,7 @@ python-telegram-bot==20.3
 
 ## 👨‍💻 Developer Info
 
-Made with ❤️ by `salman_fareeth`
+Made with ❤️ by `salmanfareeth`
 
 ---
 

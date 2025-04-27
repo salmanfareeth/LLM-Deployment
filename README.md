@@ -13,16 +13,6 @@ You can interact with the local LLM by simply messaging a Telegram Bot, which fo
 
 ---
 
-## 🚀 Project Structure
-
-/ollama-local-telegram-bot
-│
-├── flask_server.py        # Flask API to interact with Ollama
-├── telegram_bot.py        # Telegram Bot to communicate with the Flask API
-├── requirements.txt       # Python dependencies
-└── README.md              # This documentation
-
----
 
 ## 🛠 Requirements
 
@@ -36,28 +26,34 @@ You can interact with the local LLM by simply messaging a Telegram Bot, which fo
 ## 📦 Installation
 
 1. Clone the Repository
-   ```bash
-   git clone https://github.com/your-username/ollama-local-telegram-bot.git
-   cd ollama-local-telegram-bot
-   ```
+```bash
+git clone https://github.com/your-username/ollama-local-telegram-bot.git
+cd ollama-local-telegram-bot
+```
 
-3. Create a Virtual Environment (Recommended)
+3. Create a Virtual Environment (optional but Recommended)
+
+It is recommended to use a virtual environment to manage project dependencies separately.
    
-   ```py
-   python -m venv venv
-   ```
-   ```py
-   source venv/bin/activate  # On Linux/Mac
-   ```
-   ```py
-   venv\Scripts\activate     # On Windows
-   ```
+```py
+python -m venv venv
+```
+On Linux/Mac
+
+```py
+source venv/bin/activate 
+```
+On Windows
+
+```py
+venv\Scripts\activate    
+```
 
 5. Install Dependencies
    
-   ```py
-   pip install -r requirements.txt
-   ```
+```py
+pip install -r requirements.txt
+```
 
 ---
 
@@ -68,13 +64,13 @@ You can interact with the local LLM by simply messaging a Telegram Bot, which fo
 Make sure Ollama is installed and the Deepseek-R1 model is available locally:
 
 ```py
-   ollama run deepseek-r1
+ollama run deepseek-r1
 ```
 
 ### 2. Run Flask Server
 
 ```py
-   python flask_server.py
+python flask_server.py
 ```
 
 - This starts a Flask server at http://localhost:8000
@@ -85,7 +81,7 @@ Make sure Ollama is installed and the Deepseek-R1 model is available locally:
 Expose your local Flask server:
 
 ```py
-   ngrok http 8000
+ngrok http 8000
 ```
 
 Copy the public URL provided by Ngrok (e.g., https://abcd1234.ngrok.io).
@@ -139,15 +135,6 @@ Everything happens locally on your machine, ensuring privacy and control! 🔒
 
 ---
 
-## 📚 requirements.txt Contents
-
-flask
-flask-cors
-requests
-python-telegram-bot==20.3
-
----
-
 ## 📢 Important Notes
 
 - Keep Ngrok session active; otherwise, the bot will not reach your local server.
@@ -165,14 +152,26 @@ python-telegram-bot==20.3
 
 ---
 
+# 🚀 That's it!
+
+You are now running a fully private LLM-powered chatbot on your local machine, accessible globally through Telegram!
+
+---
+
 ## 👨‍💻 Developer Info
 
 Made with ❤️ by `salmanfareeth`
 
 ---
 
-# 🚀 That's it!
+## ⚠️ Disclaimer
 
-You are now running a fully private LLM-powered chatbot on your local machine, accessible globally through Telegram!
+This project is developed purely for educational and personal learning purposes.  
+The developer does not guarantee the performance, security, or production-readiness of this project.
+
+Usage of this project is at your own risk.  
+Please ensure you understand the dependencies and third-party tools (such as Ollama, Flask, Ngrok, and Telegram) involved.  
+
+The developer is not responsible for any misuse or damage caused by deploying or modifying this project.
 
 ---

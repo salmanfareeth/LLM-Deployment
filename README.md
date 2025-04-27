@@ -13,6 +13,46 @@ You can interact with the local LLM by simply messaging a Telegram Bot, which fo
 
 ---
 
+## 🤖 What is Ollama?
+
+Ollama is a framework that allows you to run, manage, and interact with Large Language Models (LLMs) directly on your local machine.  
+It provides an easy way to download, start, and communicate with AI models without needing powerful cloud infrastructure.
+
+Ollama supports multiple models and enables private, local, and secure AI experiences.
+
+Official site: https://ollama.com/
+
+---
+
+## 🚀 Why Use Ollama?
+
+- No cloud dependency — run AI models **completely offline** on your PC.
+- **More privacy** — your data stays local and secure.
+- **Flexibility** — easily switch between different models like DeepSeek, Llama 3, etc.
+- **Speed** — faster response times compared to cloud APIs (no network latency).
+- **Freedom** — no API costs or rate limits when using your own hardware.
+
+Ollama simplifies local LLM deployment for developers, researchers, and enthusiasts.
+
+---
+
+## 🧠 Why DeepSeek R1?
+
+In this project, we are using the `deepseek-r1` model with Ollama.
+
+Here’s why:
+
+- **Balanced Performance**: DeepSeek R1 offers a great balance between response quality, reasoning ability, and speed.
+- **Optimized for Local Use**: It is lighter and faster compared to larger LLMs like Llama 3 or GPT-4, making it ideal for running on a local PC without needing heavy GPU resources.
+- **Good General Knowledge**: DeepSeek R1 has strong knowledge across multiple domains, making it very capable for chatbot interactions, Q&A, summarization, and simple coding tasks.
+- **Resource Friendly**: It consumes fewer resources (RAM, CPU) which ensures smooth deployment alongside services like Flask and Telegram bots on normal systems.
+- **Free and Open**: DeepSeek models are freely available, allowing experimentation and usage without licensing issues.
+
+> In short, DeepSeek R1 was selected to create a **responsive, efficient, and practical AI chatbot experience** that works well even on mid-specification PCs.
+
+Official reference: https://deepseek.com/
+
+---
 
 ## 🛠 Requirements
 
@@ -104,7 +144,7 @@ TELEGRAM_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
 ## 🤖 Running the Telegram Bot
 
 ```py
-   python telegram_bot.py
+python telegram_bot.py
 ```
 
 The bot will now listen to incoming messages, forward them to your local AI model, and send back the responses!
